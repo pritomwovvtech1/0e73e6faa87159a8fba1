@@ -26,9 +26,16 @@
 </div>
 <div class="media-content">
 	<div class="content">
-	<strong>pritom</strong><br/>
-	<small>@dev</small><br/>
-	<p><%= t.twitt%></p>
+	<p><b>user name</b></p><br/>
+	 <p><%= t.created_at %></p><br/>
+	<p><strong><%= t.twitt%></strong></p>
+	<div><strong><%=link_to t %></strong></div>
+	<div>
+		<%#=link_to edit_twitt_path(t), class :"level-item" do%>
+		
+	</div>
+	<p><%= link_to t, method: :delete, data: {confirm: "are you sure??"}%>
+	</p>
 </div>
 </div>
 </article>
