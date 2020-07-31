@@ -15,6 +15,22 @@
 
 
 <% @twitts.each do |t|%>
-
-
+<div class="column is half">
+	<article class="media box">
+		<figure class="media-left">
+			<p class="image is -64*64">
+				<img src="https://bulma.io/images/placholder/64*64.png">
+			</p>
+		</figure>
+	
+</div>
+<div class="media-content">
+	<div class="content">
+	<strong>pritom</strong><br/>
+	<small>@dev</small><br/>
+	<p><%= t.twitt%></p>
+</div>
+</div>
+</article>
+</div>
 	<%end%>
